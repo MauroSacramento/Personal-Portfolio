@@ -48,12 +48,68 @@ a{
 
 #container #welcome-section{
     height: 100vh;
-    background: var(--main-blue);
-    font-family: Raleway, sans-serif;
-    font-size: 1.6rem;
-    color: var(--main-white);
+    background: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#container #welcome-section h1{
+    font-family: Raleway, sans-serif;
+    font-size: 3.5rem;
+    color: var(--main-white);
+}
+
+#container #welcome-section p{
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-red);
+    font-family: Poppins, sans-serif;
+}
+
+#container #main-section{
+    padding: 6rem 1.3rem;
+    background-color: var(--main-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h2.project-section-header{
+    color: var(--main-white);
+    font-family: Raleway,sans-serif;
+    font-size: 2.3rem;
+    margin: 0 auto 1rem auto;
+    border-bottom: 0.1rem solid var(--main-white);
+    padding-bottom: 0.4rem;
+}
+
+#main-section #projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem 1.8rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#main-section #projects a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#main-section #projects a p{
+    background-color: #be3144;
+    width: 100%;
+    padding: 1rem;
+}
+
+.project-image{
+    width: 100%;
+    height: 100%;
 }
